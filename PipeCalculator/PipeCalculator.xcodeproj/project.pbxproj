@@ -7,55 +7,110 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2EF641AA208261E3006B7EA6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EF641A9208261E3006B7EA6 /* AppDelegate.m */; };
-		2EF641AD208261E4006B7EA6 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EF641AC208261E4006B7EA6 /* ViewController.m */; };
-		2EF641B0208261E4006B7EA6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2EF641AE208261E4006B7EA6 /* Main.storyboard */; };
-		2EF641B2208261E5006B7EA6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2EF641B1208261E5006B7EA6 /* Assets.xcassets */; };
-		2EF641B5208261E5006B7EA6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2EF641B3208261E5006B7EA6 /* LaunchScreen.storyboard */; };
-		2EF641B8208261E5006B7EA6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EF641B7208261E5006B7EA6 /* main.m */; };
-		2EF641C2208261E5006B7EA6 /* PipeCalculatorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EF641C1208261E5006B7EA6 /* PipeCalculatorTests.m */; };
-		9B24D7A7E7DBDA16B1835C09 /* libPods-PipeCalculator.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C99C00B065DE32E753523CD0 /* libPods-PipeCalculator.a */; };
+		2E6A1C9D20829F5C00735B8A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E6A1C9C20829F5C00735B8A /* AppDelegate.swift */; };
+		2E6A1C9F20829F5C00735B8A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E6A1C9E20829F5C00735B8A /* ViewController.swift */; };
+		2E6A1CA220829F5C00735B8A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E6A1CA020829F5C00735B8A /* Main.storyboard */; };
+		2E6A1CA420829F5C00735B8A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2E6A1CA320829F5C00735B8A /* Assets.xcassets */; };
+		2E6A1CA720829F5C00735B8A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E6A1CA520829F5C00735B8A /* LaunchScreen.storyboard */; };
+		2E6A1CB220829F5D00735B8A /* PipeCalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E6A1CB120829F5D00735B8A /* PipeCalculatorTests.swift */; };
+		2E6A1CBD2082A33300735B8A /* American_Water_Works_Company_Logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E6A1CBC2082A33300735B8A /* American_Water_Works_Company_Logo.png */; };
+		2E6A1CC02082B5A600735B8A /* 53798312-water-pipe-with-a-blue-valve-icon-in-isometric-3d-style-on-a-white-background.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2E6A1CBF2082B5A600735B8A /* 53798312-water-pipe-with-a-blue-valve-icon-in-isometric-3d-style-on-a-white-background.jpg */; };
+		2E6A1D2F2082B97300735B8A /* Icon-72.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E6A1D112082B97100735B8A /* Icon-72.png */; };
+		2E6A1D302082B97300735B8A /* Icon-80.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E6A1D122082B97100735B8A /* Icon-80.png */; };
+		2E6A1D312082B97300735B8A /* Icon-512.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E6A1D132082B97100735B8A /* Icon-512.png */; };
+		2E6A1D322082B97300735B8A /* Icon-50.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E6A1D142082B97100735B8A /* Icon-50.png */; };
+		2E6A1D332082B97300735B8A /* Icon-114.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E6A1D152082B97100735B8A /* Icon-114.png */; };
+		2E6A1D342082B97300735B8A /* Icon-1024.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E6A1D162082B97100735B8A /* Icon-1024.png */; };
+		2E6A1D352082B97300735B8A /* Icon-55.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E6A1D172082B97100735B8A /* Icon-55.png */; };
+		2E6A1D362082B97300735B8A /* Icon-29.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E6A1D182082B97100735B8A /* Icon-29.png */; };
+		2E6A1D372082B97300735B8A /* Icon-16.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E6A1D192082B97100735B8A /* Icon-16.png */; };
+		2E6A1D382082B97300735B8A /* Icon-76.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E6A1D1A2082B97100735B8A /* Icon-76.png */; };
+		2E6A1D392082B97300735B8A /* Icon-87.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E6A1D1B2082B97100735B8A /* Icon-87.png */; };
+		2E6A1D3A2082B97300735B8A /* Icon-48.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E6A1D1C2082B97100735B8A /* Icon-48.png */; };
+		2E6A1D3B2082B97300735B8A /* Icon-64.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E6A1D1D2082B97100735B8A /* Icon-64.png */; };
+		2E6A1D3C2082B97300735B8A /* Icon-172.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E6A1D1E2082B97100735B8A /* Icon-172.png */; };
+		2E6A1D3D2082B97300735B8A /* Icon-152.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E6A1D1F2082B97100735B8A /* Icon-152.png */; };
+		2E6A1D3E2082B97300735B8A /* Icon-128.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E6A1D202082B97100735B8A /* Icon-128.png */; };
+		2E6A1D3F2082B97300735B8A /* Icon-100.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E6A1D212082B97100735B8A /* Icon-100.png */; };
+		2E6A1D402082B97300735B8A /* Icon-58.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E6A1D222082B97200735B8A /* Icon-58.png */; };
+		2E6A1D412082B97300735B8A /* Icon-144.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E6A1D232082B97200735B8A /* Icon-144.png */; };
+		2E6A1D422082B97300735B8A /* Icon-60.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E6A1D242082B97200735B8A /* Icon-60.png */; };
+		2E6A1D432082B97300735B8A /* Icon-40.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E6A1D252082B97200735B8A /* Icon-40.png */; };
+		2E6A1D442082B97300735B8A /* Icon-57.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E6A1D262082B97200735B8A /* Icon-57.png */; };
+		2E6A1D452082B97300735B8A /* Icon-196.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E6A1D272082B97200735B8A /* Icon-196.png */; };
+		2E6A1D462082B97300735B8A /* Icon-88.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E6A1D282082B97200735B8A /* Icon-88.png */; };
+		2E6A1D472082B97300735B8A /* Icon-256.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E6A1D292082B97200735B8A /* Icon-256.png */; };
+		2E6A1D482082B97300735B8A /* Icon-167.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E6A1D2A2082B97200735B8A /* Icon-167.png */; };
+		2E6A1D492082B97300735B8A /* Icon-20.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E6A1D2B2082B97200735B8A /* Icon-20.png */; };
+		2E6A1D4A2082B97300735B8A /* Icon-120.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E6A1D2C2082B97200735B8A /* Icon-120.png */; };
+		2E6A1D4B2082B97300735B8A /* Icon-32.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E6A1D2D2082B97200735B8A /* Icon-32.png */; };
+		2E6A1D4C2082B97300735B8A /* Icon-180.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E6A1D2E2082B97300735B8A /* Icon-180.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		2EF641BE208261E5006B7EA6 /* PBXContainerItemProxy */ = {
+		2E6A1CAE20829F5D00735B8A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 2EF6419D208261E3006B7EA6 /* Project object */;
+			containerPortal = 2E6A1C9120829F5C00735B8A /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 2EF641A4208261E3006B7EA6;
+			remoteGlobalIDString = 2E6A1C9820829F5C00735B8A;
 			remoteInfo = PipeCalculator;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		2EF641A5208261E3006B7EA6 /* PipeCalculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PipeCalculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		2EF641A8208261E3006B7EA6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		2EF641A9208261E3006B7EA6 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		2EF641AB208261E4006B7EA6 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		2EF641AC208261E4006B7EA6 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		2EF641AF208261E4006B7EA6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		2EF641B1208261E5006B7EA6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		2EF641B4208261E5006B7EA6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		2EF641B6208261E5006B7EA6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2EF641B7208261E5006B7EA6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		2EF641BD208261E5006B7EA6 /* PipeCalculatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PipeCalculatorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		2EF641C1208261E5006B7EA6 /* PipeCalculatorTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PipeCalculatorTests.m; sourceTree = "<group>"; };
-		2EF641C3208261E5006B7EA6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		782FB6919F59567DF21DF821 /* Pods-PipeCalculator.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PipeCalculator.release.xcconfig"; path = "Pods/Target Support Files/Pods-PipeCalculator/Pods-PipeCalculator.release.xcconfig"; sourceTree = "<group>"; };
-		C99C00B065DE32E753523CD0 /* libPods-PipeCalculator.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PipeCalculator.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		D4CBD182ACA4B0CE12009FE0 /* Pods-PipeCalculator.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PipeCalculator.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PipeCalculator/Pods-PipeCalculator.debug.xcconfig"; sourceTree = "<group>"; };
+		2E6A1C9920829F5C00735B8A /* PipeCalculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PipeCalculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2E6A1C9C20829F5C00735B8A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2E6A1C9E20829F5C00735B8A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		2E6A1CA120829F5C00735B8A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2E6A1CA320829F5C00735B8A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2E6A1CA620829F5C00735B8A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2E6A1CA820829F5D00735B8A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2E6A1CAD20829F5D00735B8A /* PipeCalculatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PipeCalculatorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2E6A1CB120829F5D00735B8A /* PipeCalculatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PipeCalculatorTests.swift; sourceTree = "<group>"; };
+		2E6A1CB320829F5D00735B8A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2E6A1CBC2082A33300735B8A /* American_Water_Works_Company_Logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = American_Water_Works_Company_Logo.png; sourceTree = "<group>"; };
+		2E6A1CBF2082B5A600735B8A /* 53798312-water-pipe-with-a-blue-valve-icon-in-isometric-3d-style-on-a-white-background.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "53798312-water-pipe-with-a-blue-valve-icon-in-isometric-3d-style-on-a-white-background.jpg"; sourceTree = "<group>"; };
+		2E6A1D112082B97100735B8A /* Icon-72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-72.png"; sourceTree = "<group>"; };
+		2E6A1D122082B97100735B8A /* Icon-80.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-80.png"; sourceTree = "<group>"; };
+		2E6A1D132082B97100735B8A /* Icon-512.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-512.png"; sourceTree = "<group>"; };
+		2E6A1D142082B97100735B8A /* Icon-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-50.png"; sourceTree = "<group>"; };
+		2E6A1D152082B97100735B8A /* Icon-114.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-114.png"; sourceTree = "<group>"; };
+		2E6A1D162082B97100735B8A /* Icon-1024.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-1024.png"; sourceTree = "<group>"; };
+		2E6A1D172082B97100735B8A /* Icon-55.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-55.png"; sourceTree = "<group>"; };
+		2E6A1D182082B97100735B8A /* Icon-29.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-29.png"; sourceTree = "<group>"; };
+		2E6A1D192082B97100735B8A /* Icon-16.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-16.png"; sourceTree = "<group>"; };
+		2E6A1D1A2082B97100735B8A /* Icon-76.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-76.png"; sourceTree = "<group>"; };
+		2E6A1D1B2082B97100735B8A /* Icon-87.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-87.png"; sourceTree = "<group>"; };
+		2E6A1D1C2082B97100735B8A /* Icon-48.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-48.png"; sourceTree = "<group>"; };
+		2E6A1D1D2082B97100735B8A /* Icon-64.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-64.png"; sourceTree = "<group>"; };
+		2E6A1D1E2082B97100735B8A /* Icon-172.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-172.png"; sourceTree = "<group>"; };
+		2E6A1D1F2082B97100735B8A /* Icon-152.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-152.png"; sourceTree = "<group>"; };
+		2E6A1D202082B97100735B8A /* Icon-128.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-128.png"; sourceTree = "<group>"; };
+		2E6A1D212082B97100735B8A /* Icon-100.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-100.png"; sourceTree = "<group>"; };
+		2E6A1D222082B97200735B8A /* Icon-58.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-58.png"; sourceTree = "<group>"; };
+		2E6A1D232082B97200735B8A /* Icon-144.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-144.png"; sourceTree = "<group>"; };
+		2E6A1D242082B97200735B8A /* Icon-60.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-60.png"; sourceTree = "<group>"; };
+		2E6A1D252082B97200735B8A /* Icon-40.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-40.png"; sourceTree = "<group>"; };
+		2E6A1D262082B97200735B8A /* Icon-57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-57.png"; sourceTree = "<group>"; };
+		2E6A1D272082B97200735B8A /* Icon-196.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-196.png"; sourceTree = "<group>"; };
+		2E6A1D282082B97200735B8A /* Icon-88.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-88.png"; sourceTree = "<group>"; };
+		2E6A1D292082B97200735B8A /* Icon-256.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-256.png"; sourceTree = "<group>"; };
+		2E6A1D2A2082B97200735B8A /* Icon-167.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-167.png"; sourceTree = "<group>"; };
+		2E6A1D2B2082B97200735B8A /* Icon-20.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-20.png"; sourceTree = "<group>"; };
+		2E6A1D2C2082B97200735B8A /* Icon-120.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-120.png"; sourceTree = "<group>"; };
+		2E6A1D2D2082B97200735B8A /* Icon-32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-32.png"; sourceTree = "<group>"; };
+		2E6A1D2E2082B97300735B8A /* Icon-180.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-180.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		2EF641A2208261E3006B7EA6 /* Frameworks */ = {
+		2E6A1C9620829F5C00735B8A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9B24D7A7E7DBDA16B1835C09 /* libPods-PipeCalculator.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		2EF641BA208261E5006B7EA6 /* Frameworks */ = {
+		2E6A1CAA20829F5D00735B8A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -65,80 +120,104 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0B04E44DA30E8CD02FD84745 /* Pods */ = {
+		2E6A1C9020829F5C00735B8A = {
 			isa = PBXGroup;
 			children = (
-				D4CBD182ACA4B0CE12009FE0 /* Pods-PipeCalculator.debug.xcconfig */,
-				782FB6919F59567DF21DF821 /* Pods-PipeCalculator.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		1ECD7A43B67AD88C907E351A /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				C99C00B065DE32E753523CD0 /* libPods-PipeCalculator.a */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		2EF6419C208261E3006B7EA6 = {
-			isa = PBXGroup;
-			children = (
-				2EF641A7208261E3006B7EA6 /* PipeCalculator */,
-				2EF641C0208261E5006B7EA6 /* PipeCalculatorTests */,
-				2EF641A6208261E3006B7EA6 /* Products */,
-				0B04E44DA30E8CD02FD84745 /* Pods */,
-				1ECD7A43B67AD88C907E351A /* Frameworks */,
+				2E6A1C9B20829F5C00735B8A /* PipeCalculator */,
+				2E6A1CB020829F5D00735B8A /* PipeCalculatorTests */,
+				2E6A1C9A20829F5C00735B8A /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		2EF641A6208261E3006B7EA6 /* Products */ = {
+		2E6A1C9A20829F5C00735B8A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				2EF641A5208261E3006B7EA6 /* PipeCalculator.app */,
-				2EF641BD208261E5006B7EA6 /* PipeCalculatorTests.xctest */,
+				2E6A1C9920829F5C00735B8A /* PipeCalculator.app */,
+				2E6A1CAD20829F5D00735B8A /* PipeCalculatorTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		2EF641A7208261E3006B7EA6 /* PipeCalculator */ = {
+		2E6A1C9B20829F5C00735B8A /* PipeCalculator */ = {
 			isa = PBXGroup;
 			children = (
-				2EF641A8208261E3006B7EA6 /* AppDelegate.h */,
-				2EF641A9208261E3006B7EA6 /* AppDelegate.m */,
-				2EF641AB208261E4006B7EA6 /* ViewController.h */,
-				2EF641AC208261E4006B7EA6 /* ViewController.m */,
-				2EF641AE208261E4006B7EA6 /* Main.storyboard */,
-				2EF641B1208261E5006B7EA6 /* Assets.xcassets */,
-				2EF641B3208261E5006B7EA6 /* LaunchScreen.storyboard */,
-				2EF641B6208261E5006B7EA6 /* Info.plist */,
-				2EF641B7208261E5006B7EA6 /* main.m */,
+				2E6A1C9C20829F5C00735B8A /* AppDelegate.swift */,
+				2E6A1C9E20829F5C00735B8A /* ViewController.swift */,
+				2E6A1CA020829F5C00735B8A /* Main.storyboard */,
+				2E6A1CA320829F5C00735B8A /* Assets.xcassets */,
+				2E6A1CA520829F5C00735B8A /* LaunchScreen.storyboard */,
+				2E6A1CBE2082A33F00735B8A /* Images */,
+				2E6A1CA820829F5D00735B8A /* Info.plist */,
 			);
 			path = PipeCalculator;
 			sourceTree = "<group>";
 		};
-		2EF641C0208261E5006B7EA6 /* PipeCalculatorTests */ = {
+		2E6A1CB020829F5D00735B8A /* PipeCalculatorTests */ = {
 			isa = PBXGroup;
 			children = (
-				2EF641C1208261E5006B7EA6 /* PipeCalculatorTests.m */,
-				2EF641C3208261E5006B7EA6 /* Info.plist */,
+				2E6A1CB120829F5D00735B8A /* PipeCalculatorTests.swift */,
+				2E6A1CB320829F5D00735B8A /* Info.plist */,
 			);
 			path = PipeCalculatorTests;
+			sourceTree = "<group>";
+		};
+		2E6A1CBE2082A33F00735B8A /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				2E6A1D4D2082B97A00735B8A /* Icons */,
+				2E6A1CBF2082B5A600735B8A /* 53798312-water-pipe-with-a-blue-valve-icon-in-isometric-3d-style-on-a-white-background.jpg */,
+				2E6A1CBC2082A33300735B8A /* American_Water_Works_Company_Logo.png */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		2E6A1D4D2082B97A00735B8A /* Icons */ = {
+			isa = PBXGroup;
+			children = (
+				2E6A1D192082B97100735B8A /* Icon-16.png */,
+				2E6A1D2B2082B97200735B8A /* Icon-20.png */,
+				2E6A1D182082B97100735B8A /* Icon-29.png */,
+				2E6A1D2D2082B97200735B8A /* Icon-32.png */,
+				2E6A1D252082B97200735B8A /* Icon-40.png */,
+				2E6A1D1C2082B97100735B8A /* Icon-48.png */,
+				2E6A1D142082B97100735B8A /* Icon-50.png */,
+				2E6A1D172082B97100735B8A /* Icon-55.png */,
+				2E6A1D262082B97200735B8A /* Icon-57.png */,
+				2E6A1D222082B97200735B8A /* Icon-58.png */,
+				2E6A1D242082B97200735B8A /* Icon-60.png */,
+				2E6A1D1D2082B97100735B8A /* Icon-64.png */,
+				2E6A1D112082B97100735B8A /* Icon-72.png */,
+				2E6A1D1A2082B97100735B8A /* Icon-76.png */,
+				2E6A1D122082B97100735B8A /* Icon-80.png */,
+				2E6A1D1B2082B97100735B8A /* Icon-87.png */,
+				2E6A1D282082B97200735B8A /* Icon-88.png */,
+				2E6A1D212082B97100735B8A /* Icon-100.png */,
+				2E6A1D152082B97100735B8A /* Icon-114.png */,
+				2E6A1D2C2082B97200735B8A /* Icon-120.png */,
+				2E6A1D202082B97100735B8A /* Icon-128.png */,
+				2E6A1D232082B97200735B8A /* Icon-144.png */,
+				2E6A1D1F2082B97100735B8A /* Icon-152.png */,
+				2E6A1D2A2082B97200735B8A /* Icon-167.png */,
+				2E6A1D1E2082B97100735B8A /* Icon-172.png */,
+				2E6A1D2E2082B97300735B8A /* Icon-180.png */,
+				2E6A1D272082B97200735B8A /* Icon-196.png */,
+				2E6A1D292082B97200735B8A /* Icon-256.png */,
+				2E6A1D132082B97100735B8A /* Icon-512.png */,
+				2E6A1D162082B97100735B8A /* Icon-1024.png */,
+			);
+			path = Icons;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		2EF641A4208261E3006B7EA6 /* PipeCalculator */ = {
+		2E6A1C9820829F5C00735B8A /* PipeCalculator */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2EF641C6208261E5006B7EA6 /* Build configuration list for PBXNativeTarget "PipeCalculator" */;
+			buildConfigurationList = 2E6A1CB620829F5D00735B8A /* Build configuration list for PBXNativeTarget "PipeCalculator" */;
 			buildPhases = (
-				43AC9521B431BAEBC8DD5F29 /* [CP] Check Pods Manifest.lock */,
-				2EF641A1208261E3006B7EA6 /* Sources */,
-				2EF641A2208261E3006B7EA6 /* Frameworks */,
-				2EF641A3208261E3006B7EA6 /* Resources */,
-				EF989DD40D4E6704B1F06F7A /* [CP] Copy Pods Resources */,
+				2E6A1C9520829F5C00735B8A /* Sources */,
+				2E6A1C9620829F5C00735B8A /* Frameworks */,
+				2E6A1C9720829F5C00735B8A /* Resources */,
 			);
 			buildRules = (
 			);
@@ -146,46 +225,47 @@
 			);
 			name = PipeCalculator;
 			productName = PipeCalculator;
-			productReference = 2EF641A5208261E3006B7EA6 /* PipeCalculator.app */;
+			productReference = 2E6A1C9920829F5C00735B8A /* PipeCalculator.app */;
 			productType = "com.apple.product-type.application";
 		};
-		2EF641BC208261E5006B7EA6 /* PipeCalculatorTests */ = {
+		2E6A1CAC20829F5D00735B8A /* PipeCalculatorTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2EF641C9208261E5006B7EA6 /* Build configuration list for PBXNativeTarget "PipeCalculatorTests" */;
+			buildConfigurationList = 2E6A1CB920829F5D00735B8A /* Build configuration list for PBXNativeTarget "PipeCalculatorTests" */;
 			buildPhases = (
-				2EF641B9208261E5006B7EA6 /* Sources */,
-				2EF641BA208261E5006B7EA6 /* Frameworks */,
-				2EF641BB208261E5006B7EA6 /* Resources */,
+				2E6A1CA920829F5D00735B8A /* Sources */,
+				2E6A1CAA20829F5D00735B8A /* Frameworks */,
+				2E6A1CAB20829F5D00735B8A /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				2EF641BF208261E5006B7EA6 /* PBXTargetDependency */,
+				2E6A1CAF20829F5D00735B8A /* PBXTargetDependency */,
 			);
 			name = PipeCalculatorTests;
 			productName = PipeCalculatorTests;
-			productReference = 2EF641BD208261E5006B7EA6 /* PipeCalculatorTests.xctest */;
+			productReference = 2E6A1CAD20829F5D00735B8A /* PipeCalculatorTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		2EF6419D208261E3006B7EA6 /* Project object */ = {
+		2E6A1C9120829F5C00735B8A /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0930;
 				LastUpgradeCheck = 0930;
 				ORGANIZATIONNAME = "Carson Lloyd";
 				TargetAttributes = {
-					2EF641A4208261E3006B7EA6 = {
+					2E6A1C9820829F5C00735B8A = {
 						CreatedOnToolsVersion = 9.3;
 					};
-					2EF641BC208261E5006B7EA6 = {
+					2E6A1CAC20829F5D00735B8A = {
 						CreatedOnToolsVersion = 9.3;
-						TestTargetID = 2EF641A4208261E3006B7EA6;
+						TestTargetID = 2E6A1C9820829F5C00735B8A;
 					};
 				};
 			};
-			buildConfigurationList = 2EF641A0208261E3006B7EA6 /* Build configuration list for PBXProject "PipeCalculator" */;
+			buildConfigurationList = 2E6A1C9420829F5C00735B8A /* Build configuration list for PBXProject "PipeCalculator" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -193,29 +273,61 @@
 				en,
 				Base,
 			);
-			mainGroup = 2EF6419C208261E3006B7EA6;
-			productRefGroup = 2EF641A6208261E3006B7EA6 /* Products */;
+			mainGroup = 2E6A1C9020829F5C00735B8A;
+			productRefGroup = 2E6A1C9A20829F5C00735B8A /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				2EF641A4208261E3006B7EA6 /* PipeCalculator */,
-				2EF641BC208261E5006B7EA6 /* PipeCalculatorTests */,
+				2E6A1C9820829F5C00735B8A /* PipeCalculator */,
+				2E6A1CAC20829F5D00735B8A /* PipeCalculatorTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		2EF641A3208261E3006B7EA6 /* Resources */ = {
+		2E6A1C9720829F5C00735B8A /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2EF641B5208261E5006B7EA6 /* LaunchScreen.storyboard in Resources */,
-				2EF641B2208261E5006B7EA6 /* Assets.xcassets in Resources */,
-				2EF641B0208261E4006B7EA6 /* Main.storyboard in Resources */,
+				2E6A1D462082B97300735B8A /* Icon-88.png in Resources */,
+				2E6A1D4B2082B97300735B8A /* Icon-32.png in Resources */,
+				2E6A1D4A2082B97300735B8A /* Icon-120.png in Resources */,
+				2E6A1D302082B97300735B8A /* Icon-80.png in Resources */,
+				2E6A1CA720829F5C00735B8A /* LaunchScreen.storyboard in Resources */,
+				2E6A1D3B2082B97300735B8A /* Icon-64.png in Resources */,
+				2E6A1D382082B97300735B8A /* Icon-76.png in Resources */,
+				2E6A1D392082B97300735B8A /* Icon-87.png in Resources */,
+				2E6A1D352082B97300735B8A /* Icon-55.png in Resources */,
+				2E6A1D322082B97300735B8A /* Icon-50.png in Resources */,
+				2E6A1D362082B97300735B8A /* Icon-29.png in Resources */,
+				2E6A1D432082B97300735B8A /* Icon-40.png in Resources */,
+				2E6A1D3F2082B97300735B8A /* Icon-100.png in Resources */,
+				2E6A1D4C2082B97300735B8A /* Icon-180.png in Resources */,
+				2E6A1D332082B97300735B8A /* Icon-114.png in Resources */,
+				2E6A1D422082B97300735B8A /* Icon-60.png in Resources */,
+				2E6A1CBD2082A33300735B8A /* American_Water_Works_Company_Logo.png in Resources */,
+				2E6A1D3E2082B97300735B8A /* Icon-128.png in Resources */,
+				2E6A1CC02082B5A600735B8A /* 53798312-water-pipe-with-a-blue-valve-icon-in-isometric-3d-style-on-a-white-background.jpg in Resources */,
+				2E6A1D3C2082B97300735B8A /* Icon-172.png in Resources */,
+				2E6A1D402082B97300735B8A /* Icon-58.png in Resources */,
+				2E6A1D442082B97300735B8A /* Icon-57.png in Resources */,
+				2E6A1CA420829F5C00735B8A /* Assets.xcassets in Resources */,
+				2E6A1D3D2082B97300735B8A /* Icon-152.png in Resources */,
+				2E6A1D342082B97300735B8A /* Icon-1024.png in Resources */,
+				2E6A1D492082B97300735B8A /* Icon-20.png in Resources */,
+				2E6A1D312082B97300735B8A /* Icon-512.png in Resources */,
+				2E6A1D372082B97300735B8A /* Icon-16.png in Resources */,
+				2E6A1D3A2082B97300735B8A /* Icon-48.png in Resources */,
+				2E6A1CA220829F5C00735B8A /* Main.storyboard in Resources */,
+				2E6A1D482082B97300735B8A /* Icon-167.png in Resources */,
+				2E6A1D452082B97300735B8A /* Icon-196.png in Resources */,
+				2E6A1D412082B97300735B8A /* Icon-144.png in Resources */,
+				2E6A1D472082B97300735B8A /* Icon-256.png in Resources */,
+				2E6A1D2F2082B97300735B8A /* Icon-72.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		2EF641BB208261E5006B7EA6 /* Resources */ = {
+		2E6A1CAB20829F5D00735B8A /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -224,89 +336,47 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
-/* Begin PBXShellScriptBuildPhase section */
-		43AC9521B431BAEBC8DD5F29 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-PipeCalculator-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		EF989DD40D4E6704B1F06F7A /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-PipeCalculator/Pods-PipeCalculator-resources.sh",
-				"${PODS_ROOT}/GTMOAuth2/Source/Touch/GTMOAuth2ViewTouch.xib",
-				"${PODS_ROOT}/GoogleSignIn/Resources/GoogleSignIn.bundle",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GTMOAuth2ViewTouch.nib",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleSignIn.bundle",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PipeCalculator/Pods-PipeCalculator-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
-		2EF641A1208261E3006B7EA6 /* Sources */ = {
+		2E6A1C9520829F5C00735B8A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2EF641AD208261E4006B7EA6 /* ViewController.m in Sources */,
-				2EF641B8208261E5006B7EA6 /* main.m in Sources */,
-				2EF641AA208261E3006B7EA6 /* AppDelegate.m in Sources */,
+				2E6A1C9F20829F5C00735B8A /* ViewController.swift in Sources */,
+				2E6A1C9D20829F5C00735B8A /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		2EF641B9208261E5006B7EA6 /* Sources */ = {
+		2E6A1CA920829F5D00735B8A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2EF641C2208261E5006B7EA6 /* PipeCalculatorTests.m in Sources */,
+				2E6A1CB220829F5D00735B8A /* PipeCalculatorTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		2EF641BF208261E5006B7EA6 /* PBXTargetDependency */ = {
+		2E6A1CAF20829F5D00735B8A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 2EF641A4208261E3006B7EA6 /* PipeCalculator */;
-			targetProxy = 2EF641BE208261E5006B7EA6 /* PBXContainerItemProxy */;
+			target = 2E6A1C9820829F5C00735B8A /* PipeCalculator */;
+			targetProxy = 2E6A1CAE20829F5D00735B8A /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		2EF641AE208261E4006B7EA6 /* Main.storyboard */ = {
+		2E6A1CA020829F5C00735B8A /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				2EF641AF208261E4006B7EA6 /* Base */,
+				2E6A1CA120829F5C00735B8A /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		2EF641B3208261E5006B7EA6 /* LaunchScreen.storyboard */ = {
+		2E6A1CA520829F5C00735B8A /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				2EF641B4208261E5006B7EA6 /* Base */,
+				2E6A1CA620829F5C00735B8A /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -314,7 +384,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		2EF641C4208261E5006B7EA6 /* Debug */ = {
+		2E6A1CB420829F5D00735B8A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -369,10 +439,12 @@
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
-		2EF641C5208261E5006B7EA6 /* Release */ = {
+		2E6A1CB520829F5D00735B8A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -420,16 +492,18 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
-		2EF641C7208261E5006B7EA6 /* Debug */ = {
+		2E6A1CB720829F5D00735B8A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D4CBD182ACA4B0CE12009FE0 /* Pods-PipeCalculator.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DKBT9C99G4;
 				INFOPLIST_FILE = PipeCalculator/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -437,16 +511,17 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.PCF.PipeCalculator;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		2EF641C8208261E5006B7EA6 /* Release */ = {
+		2E6A1CB820829F5D00735B8A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 782FB6919F59567DF21DF821 /* Pods-PipeCalculator.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DKBT9C99G4;
 				INFOPLIST_FILE = PipeCalculator/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -454,15 +529,18 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.PCF.PipeCalculator;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
-		2EF641CA208261E5006B7EA6 /* Debug */ = {
+		2E6A1CBA20829F5D00735B8A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DKBT9C99G4;
 				INFOPLIST_FILE = PipeCalculatorTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -471,16 +549,19 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.PCF.PipeCalculatorTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PipeCalculator.app/PipeCalculator";
 			};
 			name = Debug;
 		};
-		2EF641CB208261E5006B7EA6 /* Release */ = {
+		2E6A1CBB20829F5D00735B8A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DKBT9C99G4;
 				INFOPLIST_FILE = PipeCalculatorTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -489,6 +570,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.PCF.PipeCalculatorTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PipeCalculator.app/PipeCalculator";
 			};
@@ -497,34 +579,34 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		2EF641A0208261E3006B7EA6 /* Build configuration list for PBXProject "PipeCalculator" */ = {
+		2E6A1C9420829F5C00735B8A /* Build configuration list for PBXProject "PipeCalculator" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				2EF641C4208261E5006B7EA6 /* Debug */,
-				2EF641C5208261E5006B7EA6 /* Release */,
+				2E6A1CB420829F5D00735B8A /* Debug */,
+				2E6A1CB520829F5D00735B8A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2EF641C6208261E5006B7EA6 /* Build configuration list for PBXNativeTarget "PipeCalculator" */ = {
+		2E6A1CB620829F5D00735B8A /* Build configuration list for PBXNativeTarget "PipeCalculator" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				2EF641C7208261E5006B7EA6 /* Debug */,
-				2EF641C8208261E5006B7EA6 /* Release */,
+				2E6A1CB720829F5D00735B8A /* Debug */,
+				2E6A1CB820829F5D00735B8A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2EF641C9208261E5006B7EA6 /* Build configuration list for PBXNativeTarget "PipeCalculatorTests" */ = {
+		2E6A1CB920829F5D00735B8A /* Build configuration list for PBXNativeTarget "PipeCalculatorTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				2EF641CA208261E5006B7EA6 /* Debug */,
-				2EF641CB208261E5006B7EA6 /* Release */,
+				2E6A1CBA20829F5D00735B8A /* Debug */,
+				2E6A1CBB20829F5D00735B8A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 2EF6419D208261E3006B7EA6 /* Project object */;
+	rootObject = 2E6A1C9120829F5C00735B8A /* Project object */;
 }
