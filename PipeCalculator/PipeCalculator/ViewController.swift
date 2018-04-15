@@ -104,22 +104,22 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
 	func pickerView(_ pickerView: UIPickerView, widthForComponent component: Int) -> CGFloat {
 		switch (component) {
 		case 0:
-			return 80.0;
+			return 140.0;
 		case 1:
-			return 90.0;
+			return 100.0;
 		case 2:
-			return 260.0;
+			return 450.0;
 		case 3:
-			return 90.0;
+			return 100.0;
 		case 4:
-			return 80.0;
+			return 140.0;
 		default:
 			return 0;
 		}
 	}
 
 	func vars2str() -> String {
-		let outstr: String = "http://10.250.56.133:5000/minrestrainedlength?design_pressure=" + pressure + "&depth=" + depth + "&soil_type=" + soil + "&trench_type=" + trench + "&safety_factor=" + safety;
+		let outstr: String = "http://45.56.89.158:5000/minrestrainedlength?design_pressure=" + pressure + "&depth=" + depth + "&soil_type=" + soil + "&trench_type=" + trench + "&safety_factor=" + safety;
 
 		return outstr;
 	}
