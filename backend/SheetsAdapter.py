@@ -58,7 +58,7 @@ class SheetsAdapter:
             sheet_data = self.wks.get_worksheet(self.sheets.index(sheet_name)).range(range_string)
             sheet_data = list(map(lambda x: x.value, sheet_data))
             data_array = np.array(sheet_data).reshape(
-                (ord(column_letters[1]) - ord(column_letters[0]) + 1, int(row_numbers[1]) - int(row_numbers[0]) + 1))
+                (int(row_numbers[1]) - int(row_numbers[0]) + 1), ord(column_letters[1]) - ord(column_letters[0]) + 1)
 
             return data_array.tolist()
         except ValueError:

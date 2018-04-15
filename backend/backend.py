@@ -1,12 +1,14 @@
 from flask import Flask
 from flask import abort
 from flask import request
+from flask import jsonify
 from SheetsAdapter import SheetsAdapter
 from jsonschema import validate
 from jsonschema.exceptions import ValidationError
 import json
 from errors import InvalidArguments
 from errors import InternalServerError
+from HtmlGenerator import HtmlGenerator
 
 app = Flask(__name__)
 
@@ -38,17 +40,19 @@ def min_restrained_length():
         sheet.setCell("Restraint Calculator", "E35", query["trench_type"])
         sheet.setCell("Restraint Calculator", "E37", query["safety_factor"])
 
-        results = {"no_poly": {"horizontal": sheet.getRange("Restraint Calculator", "D46:H49"),
-                               "vertical_down": sheet.getRange("Restraint Calculator", "D52:H55"),
-                               "vertical_up": sheet.getRange("Restraint Calculator", "D58:H61"),
-                               "dead_end": sheet.getRange("Restraint Calculator","D64:H64")},
-                   "poly": {"horizontal": sheet.getRange("Restraint Calculator", "L46:P49"),
-                               "vertical_down": sheet.getRange("Restraint Calculator", "L52:P55"),
-                               "vertical_up": sheet.getRange("Restraint Calculator", "L58:P61"),
-                               "dead_end": sheet.getRange("Restraint Calculator", "L64:P64")}
+        results = {"No Polyethylene Encasement": {"Horizontal": sheet.getRange("Restraint Calculator", "D46:H49"),
+                                                  "Vertical Down": sheet.getRange("Restraint Calculator", "D52:H55"),
+                                                  "Vertical Up": sheet.getRange("Restraint Calculator", "D58:H61"),
+                                                  "Dead End": sheet.getRange("Restraint Calculator", "D64:H64")},
+                   "Polyethylene Encasement": {"Horizontal": sheet.getRange("Restraint Calculator", "L46:P49"),
+                                               "Vertical Down": sheet.getRange("Restraint Calculator", "L52:P55"),
+                                               "Vertical Up": sheet.getRange("Restraint Calculator", "L58:P61"),
+                                               "Dead End": sheet.getRange("Restraint Calculator", "L64:P64")}
                    }
-
-        return json.dumps(results)
+        if (str(request.accept_mimetypes) == "application/json"):
+            return jsonify(results)
+        else:
+            return HtmlGenerator.render(results)
     except ValidationError as e:
         return InvalidArguments(e.message)
     except Exception as e:
@@ -56,4 +60,4 @@ def min_restrained_length():
 
 
 if __name__ == '__main__':
-    app.run()
+    app.run("0.0.0.0", 5000)
