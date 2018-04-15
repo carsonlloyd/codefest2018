@@ -10,8 +10,6 @@ import UIKit
 
 class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
 
-
-	@IBOutlet weak var Info: UIBarButtonItem!
 	@IBOutlet weak var DP: UIPickerView!
 	var pickerDataSource: [[String]] = [[String]]()
 
@@ -41,9 +39,37 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
 	func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
 		return pickerDataSource[component][row]
 	}
+
+	var pressure: String = ""
+	var depth: String = ""
+	var soil: String = ""
+	var trench: String = ""
+	var safety: String = ""
 	func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
-		// This method is triggered whenever the user makes a change to the picker selection.
-		// The parameter named row and component represents what was selected.
+		switch (component){
+		case 0:
+			pressure = pickerDataSource[component][row];
+			print(pressure);
+			break;
+		case 1:
+			depth = pickerDataSource[component][row];
+			print(depth);
+			break;
+		case 2:
+			soil = pickerDataSource[component][row];
+			print(soil);
+			break;
+		case 3:
+			trench = pickerDataSource[component][row];
+			print(trench);
+			break;
+		case 4:
+			safety = pickerDataSource[component][row];
+			print(safety);
+			break;
+		default:
+			break;
+		}
 	}
 
 	func pickerView(_ pickerView: UIPickerView, widthForComponent component: Int) -> CGFloat
