@@ -23,13 +23,6 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
 							["Clay 1", "Silt 1", "Clay 2", "Silt 2", "Coh-Gran", "Sand/Silt", "Good Sand/Gravel"],
 							["2", "3", "4", "5"],
 							["1.5","2.0","2.5"]];
-
-//		let strURL = vars2str();
-//		if let encoded = strURL.addingPercentEncoding(withAllowedCharacters: .urlFragmentAllowed),
-//			let myURL = URL(string: encoded) {
-//			print("GOING");
-//			UIApplication.shared.open(myURL, options: [:]);
-//		}
 	}
 
 	override func didReceiveMemoryWarning() {
@@ -102,11 +95,17 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
 		}
 	}
 
-	func vars2str() -> String { //_ pressure: String, depth: String, soil: String, trench: String, safety: String
+	func vars2str() -> String {
 		let outstr: String = "http://10.250.56.133:5000/minrestrainedlength?design_pressure=" + pressure + "&depth=" + depth + "&soil_type=" + soil + "&trench_type=" + trench + "&safety_factor=" + safety;
-		print(outstr);
 
 		return outstr;
+	}
+
+	override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+		if segue.destination is WebView {
+			let vc = segue.destination as? WebView
+			vc?.url = vars2str();
+		}
 	}
 
 }

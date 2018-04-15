@@ -11,19 +11,15 @@ import WebKit
 
 class WebView: UIViewController , WKNavigationDelegate {
 	@IBOutlet weak var webView: WKWebView!
-
-/*	override func loadView() {
-		//webView = WKWebView()
-		webView.navigationDelegate = self
-		view = webView
-	}*/
+	var url: String = ""
 
 	override func viewDidLoad() {
-		print("I'M IN");
+		print(url);
 		super.viewDidLoad();
 
-		let strURL = URL(string: "http://10.250.56.133:5000/minrestrainedlength?design_pressure=60&depth=3&soil_type=Sand%2FSilt&trench_type=4&safety_factor=1")!;
-		webView.load(URLRequest(url: strURL));
-		webView.allowsBackForwardNavigationGestures = true;
+		let encoded = url.addingPercentEncoding(withAllowedCharacters: .urlFragmentAllowed);
+		let strURL = URL(string: encoded!);
+		print(strURL);
+		webView.load(URLRequest(url: strURL!));
 	}
 }
