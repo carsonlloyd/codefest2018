@@ -103,10 +103,10 @@ T.O.P.</string>
             </objects>
             <point key="canvasLocation" x="117.39130434782609" y="116"/>
         </scene>
-        <!--View Controller-->
+        <!--Info-->
         <scene sceneID="kKJ-iQ-czC">
             <objects>
-                <viewController id="wgR-3T-iYg" sceneMemberID="viewController">
+                <viewController title="Info" id="wgR-3T-iYg" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="hK2-Pz-v1a">
                         <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -117,7 +117,11 @@ T.O.P.</string>
                                 <items>
                                     <navigationItem title="Info" id="wC0-68-9s1">
                                         <barButtonItem key="backBarButtonItem" title="Back" id="gmr-1S-Bfx"/>
-                                        <barButtonItem key="leftBarButtonItem" title="Back" id="lfM-ib-fwk"/>
+                                        <barButtonItem key="leftBarButtonItem" title="Back" id="lfM-ib-fwk">
+                                            <connections>
+                                                <segue destination="BYZ-38-t0r" kind="show" id="pBk-oW-rcR"/>
+                                            </connections>
+                                        </barButtonItem>
                                     </navigationItem>
                                 </items>
                             </navigationBar>
@@ -135,7 +139,7 @@ T.O.P.</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZSh-s5-xlT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="461.91904047976016" y="928.79999999999995"/>
+            <point key="canvasLocation" x="461.01949025487261" y="927.20000000000005"/>
         </scene>
         <!--WebView-->
         <scene sceneID="Zza-A3-bb0">
@@ -168,4 +172,7 @@ T.O.P.</string>
             <point key="canvasLocation" x="-574.36281859070471" y="952.79999999999995"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="pBk-oW-rcR"/>
+    </inferredMetricsTieBreakers>
 </document>
