@@ -18,6 +18,11 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
 		super.viewDidLoad();
 		self.DP.delegate = self
 		self.DP.dataSource = self
+
+		//var pressures = [];
+		//var depths = [];
+		//var safeties = [];
+
 		pickerDataSource = [["1", "2", "3", "4"],
 							["1", "2", "3", "4"],
 							["Clay 1", "Silt 1", "Clay 2", "Silt 2", "Coh-Gran", "Sand/Silt", "Good Sand/Gravel"],
