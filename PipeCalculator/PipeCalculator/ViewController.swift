@@ -19,15 +19,33 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
 		self.DP.delegate = self
 		self.DP.dataSource = self
 
-		//var pressures = [];
-		//var depths = [];
-		//var safeties = [];
+		var i: Int = 0;
+		var pressures: [String] = [String]();
+		while i <= 200 {
+			var myStr = String(i);
+			pressures.append(myStr);
+			i += 1;
+		}
+		var x: Double = 0.0;
+		var depths: [String] = [String]();
+		while x <= 60.0 {
+			var myStr = String(x);
+			depths.append(myStr);
+			x += 0.5;
+		}
+		var y: Double = 0.0;
+		var safeties: [String] = [String]();
+		while y <= 5.0 {
+			var myStr = String(y);
+			safeties.append(myStr);
+			y += 0.5;
+		}
 
-		pickerDataSource = [["1", "2", "3", "4"],
-							["1", "2", "3", "4"],
+		pickerDataSource = [pressures,
+							depths,
 							["Clay 1", "Silt 1", "Clay 2", "Silt 2", "Coh-Gran", "Sand/Silt", "Good Sand/Gravel"],
-							["2", "3", "4", "5"],
-							["1.5","2.0","2.5"]];
+							["2", "3", "4","5"],
+							safeties];
 	}
 
 	override func didReceiveMemoryWarning() {
@@ -46,11 +64,11 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
 		return pickerDataSource[component][row]
 	}
 
-	var pressure: String = "1" // THESE MATCH THE DEFAULTS
-	var depth: String = "1"
+	var pressure: String = "0"; // THESE MATCH THE DEFAULTS
+	var depth: String = "0.0";
 	var soil: String = "Clay 1"
 	var trench: String = "2"
-	var safety: String = "1.5"
+	var safety: String = "0.0";
 	func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
 		switch (component){
 		case 0:
