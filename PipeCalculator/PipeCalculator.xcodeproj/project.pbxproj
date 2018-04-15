@@ -45,6 +45,7 @@
 		2E6A1D4A2082B97300735B8A /* Icon-120.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E6A1D2C2082B97200735B8A /* Icon-120.png */; };
 		2E6A1D4B2082B97300735B8A /* Icon-32.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E6A1D2D2082B97200735B8A /* Icon-32.png */; };
 		2E6A1D4C2082B97300735B8A /* Icon-180.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E6A1D2E2082B97300735B8A /* Icon-180.png */; };
+		2E6A1D572083183B00735B8A /* PopoverController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E6A1D562083183B00735B8A /* PopoverController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -100,6 +101,7 @@
 		2E6A1D2C2082B97200735B8A /* Icon-120.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-120.png"; sourceTree = "<group>"; };
 		2E6A1D2D2082B97200735B8A /* Icon-32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-32.png"; sourceTree = "<group>"; };
 		2E6A1D2E2082B97300735B8A /* Icon-180.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-180.png"; sourceTree = "<group>"; };
+		2E6A1D562083183B00735B8A /* PopoverController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopoverController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -148,6 +150,7 @@
 				2E6A1CA520829F5C00735B8A /* LaunchScreen.storyboard */,
 				2E6A1CBE2082A33F00735B8A /* Images */,
 				2E6A1CA820829F5D00735B8A /* Info.plist */,
+				2E6A1D562083183B00735B8A /* PopoverController.swift */,
 			);
 			path = PipeCalculator;
 			sourceTree = "<group>";
@@ -342,6 +345,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2E6A1C9F20829F5C00735B8A /* ViewController.swift in Sources */,
+				2E6A1D572083183B00735B8A /* PopoverController.swift in Sources */,
 				2E6A1C9D20829F5C00735B8A /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
