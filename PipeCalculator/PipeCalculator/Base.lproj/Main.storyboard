@@ -83,10 +83,10 @@ T.O.P.</string>
                                             <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="infoLight" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" id="Bhh-nc-DBZ">
                                                 <rect key="frame" x="625" y="5" width="22" height="22"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <connections>
+                                                    <segue destination="wgR-3T-iYg" kind="showDetail" id="sKN-eY-7tS"/>
+                                                </connections>
                                             </button>
-                                            <connections>
-                                                <segue destination="wgR-3T-iYg" kind="show" id="SgR-1K-knA"/>
-                                            </connections>
                                         </barButtonItem>
                                     </navigationItem>
                                 </items>
@@ -115,7 +115,10 @@ T.O.P.</string>
                                 <rect key="frame" x="0.0" y="0.0" width="667" height="32"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <items>
-                                    <navigationItem title="Title" id="wC0-68-9s1"/>
+                                    <navigationItem title="Info" id="wC0-68-9s1">
+                                        <barButtonItem key="backBarButtonItem" title="Back" id="gmr-1S-Bfx"/>
+                                        <barButtonItem key="leftBarButtonItem" title="Back" id="lfM-ib-fwk"/>
+                                    </navigationItem>
                                 </items>
                             </navigationBar>
                         </subviews>
