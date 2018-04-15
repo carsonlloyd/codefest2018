@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import WebKit
 
 class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
 
@@ -22,6 +23,13 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
 							["Clay 1", "Silt 1", "Clay 2", "Silt 2", "Coh-Gran", "Sand/Silt", "Good Sand/Gravel"],
 							["2", "3", "4", "5"],
 							["1.5","2.0","2.5"]];
+
+//		let strURL = vars2str();
+//		if let encoded = strURL.addingPercentEncoding(withAllowedCharacters: .urlFragmentAllowed),
+//			let myURL = URL(string: encoded) {
+//			print("GOING");
+//			UIApplication.shared.open(myURL, options: [:]);
+//		}
 	}
 
 	override func didReceiveMemoryWarning() {
@@ -40,41 +48,45 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
 		return pickerDataSource[component][row]
 	}
 
-	var pressure: String = ""
-	var depth: String = ""
-	var soil: String = ""
-	var trench: String = ""
-	var safety: String = ""
+	var pressure: String = "1" // THESE MATCH THE DEFAULTS
+	var depth: String = "1"
+	var soil: String = "Clay 1"
+	var trench: String = "2"
+	var safety: String = "1.5"
 	func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
 		switch (component){
 		case 0:
 			pressure = pickerDataSource[component][row];
 			print(pressure);
+			vars2str();
 			break;
 		case 1:
 			depth = pickerDataSource[component][row];
 			print(depth);
+			vars2str();
 			break;
 		case 2:
 			soil = pickerDataSource[component][row];
 			print(soil);
+			vars2str();
 			break;
 		case 3:
 			trench = pickerDataSource[component][row];
 			print(trench);
+			vars2str();
 			break;
 		case 4:
 			safety = pickerDataSource[component][row];
 			print(safety);
+			vars2str();
 			break;
 		default:
 			break;
 		}
 	}
 
-	func pickerView(_ pickerView: UIPickerView, widthForComponent component: Int) -> CGFloat
-	{
-		switch (component){
+	func pickerView(_ pickerView: UIPickerView, widthForComponent component: Int) -> CGFloat {
+		switch (component) {
 		case 0:
 			return 80.0;
 		case 1:
@@ -89,4 +101,12 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
 			return 0;
 		}
 	}
+
+	func vars2str() -> String { //_ pressure: String, depth: String, soil: String, trench: String, safety: String
+		let outstr: String = "http://10.250.56.133:5000/minrestrainedlength?design_pressure=" + pressure + "&depth=" + depth + "&soil_type=" + soil + "&trench_type=" + trench + "&safety_factor=" + safety;
+		print(outstr);
+
+		return outstr;
+	}
+
 }

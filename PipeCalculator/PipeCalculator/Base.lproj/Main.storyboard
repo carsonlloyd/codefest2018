@@ -10,6 +10,48 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--Web View-->
+        <scene sceneID="Yzg-Mj-6I0">
+            <objects>
+                <viewController id="ZRn-r5-3ez" customClass="WebView" customModule="PipeCalculator" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="I0f-SU-Hfi">
+                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nT9-AP-Qsk">
+                                <rect key="frame" x="0.0" y="0.0" width="667" height="32"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="Title" id="ebN-Bn-0EN">
+                                        <barButtonItem key="leftBarButtonItem" title="Back" id="bb8-Ma-kSg">
+                                            <connections>
+                                                <segue destination="BYZ-38-t0r" kind="show" id="JNB-lI-RlY"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <wkWebView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mVJ-gt-NfB">
+                                <rect key="frame" x="0.0" y="32" width="667" height="343"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="cjv-XH-qq9"/>
+                    </view>
+                    <connections>
+                        <outlet property="webView" destination="mVJ-gt-NfB" id="Pnh-3E-xWr"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Eq9-gE-amf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-501.49925037481262" y="812"/>
+        </scene>
         <!--Main-->
         <scene sceneID="tne-QT-ifu">
             <objects>
@@ -32,7 +74,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="Calculate"/>
                                 <connections>
-                                    <segue destination="718-P6-fus" kind="show" id="Z9l-GL-iwy"/>
+                                    <segue destination="ZRn-r5-3ez" kind="show" id="zW1-pW-1Cn"/>
                                 </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="62l-WE-BpJ">
@@ -64,7 +106,7 @@ T.O.P.</string>
                                 <rect key="frame" x="244" y="40" width="179" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="Safety Factor" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="poI-XG-V6m">
@@ -106,7 +148,7 @@ T.O.P.</string>
         <!--Info-->
         <scene sceneID="kKJ-iQ-czC">
             <objects>
-                <viewController title="Info" id="wgR-3T-iYg" sceneMemberID="viewController">
+                <viewController title="Info" id="wgR-3T-iYg" customClass="Info" customModule="PipeCalculator" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="hK2-Pz-v1a">
                         <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -139,40 +181,10 @@ T.O.P.</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZSh-s5-xlT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="461.01949025487261" y="927.20000000000005"/>
-        </scene>
-        <!--WebView-->
-        <scene sceneID="Zza-A3-bb0">
-            <objects>
-                <viewController id="718-P6-fus" userLabel="WebView" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="LGe-t2-sMs">
-                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="T1M-eg-LD8">
-                                <rect key="frame" x="0.0" y="0.0" width="667" height="32"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                                <items>
-                                    <navigationItem title="Pipe Strain RENAME ME" id="cfh-Dp-MG1">
-                                        <barButtonItem key="leftBarButtonItem" title="Back" id="FgD-HL-ROF">
-                                            <connections>
-                                                <segue destination="BYZ-38-t0r" kind="show" id="rKM-0I-gfC"/>
-                                            </connections>
-                                        </barButtonItem>
-                                    </navigationItem>
-                                </items>
-                            </navigationBar>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="Mem-SS-s4e"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="jmb-B9-2Xu" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-574.36281859070471" y="952.79999999999995"/>
+            <point key="canvasLocation" x="811" y="457"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="pBk-oW-rcR"/>
+        <segue reference="JNB-lI-RlY"/>
     </inferredMetricsTieBreakers>
 </document>

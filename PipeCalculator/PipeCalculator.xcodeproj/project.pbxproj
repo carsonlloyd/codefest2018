@@ -45,6 +45,9 @@
 		2E6A1D4A2082B97300735B8A /* Icon-120.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E6A1D2C2082B97200735B8A /* Icon-120.png */; };
 		2E6A1D4B2082B97300735B8A /* Icon-32.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E6A1D2D2082B97200735B8A /* Icon-32.png */; };
 		2E6A1D4C2082B97300735B8A /* Icon-180.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E6A1D2E2082B97300735B8A /* Icon-180.png */; };
+		2E6A1D5A20833E0000735B8A /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E6A1D5920833E0000735B8A /* WebKit.framework */; };
+		2E6C53FB2083597200999685 /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E6C53FA2083597200999685 /* WebView.swift */; };
+		2E6C53FD20835B7F00999685 /* Info.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E6C53FC20835B7F00999685 /* Info.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -100,6 +103,9 @@
 		2E6A1D2C2082B97200735B8A /* Icon-120.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-120.png"; sourceTree = "<group>"; };
 		2E6A1D2D2082B97200735B8A /* Icon-32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-32.png"; sourceTree = "<group>"; };
 		2E6A1D2E2082B97300735B8A /* Icon-180.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-180.png"; sourceTree = "<group>"; };
+		2E6A1D5920833E0000735B8A /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		2E6C53FA2083597200999685 /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
+		2E6C53FC20835B7F00999685 /* Info.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Info.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +113,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2E6A1D5A20833E0000735B8A /* WebKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -126,6 +133,7 @@
 				2E6A1C9B20829F5C00735B8A /* PipeCalculator */,
 				2E6A1CB020829F5D00735B8A /* PipeCalculatorTests */,
 				2E6A1C9A20829F5C00735B8A /* Products */,
+				2E6A1D5820833E0000735B8A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -144,6 +152,8 @@
 				2E6A1C9C20829F5C00735B8A /* AppDelegate.swift */,
 				2E6A1C9E20829F5C00735B8A /* ViewController.swift */,
 				2E6A1CA020829F5C00735B8A /* Main.storyboard */,
+				2E6C53FC20835B7F00999685 /* Info.swift */,
+				2E6C53FA2083597200999685 /* WebView.swift */,
 				2E6A1CA320829F5C00735B8A /* Assets.xcassets */,
 				2E6A1CA520829F5C00735B8A /* LaunchScreen.storyboard */,
 				2E6A1CBE2082A33F00735B8A /* Images */,
@@ -206,6 +216,14 @@
 				2E6A1D162082B97100735B8A /* Icon-1024.png */,
 			);
 			path = Icons;
+			sourceTree = "<group>";
+		};
+		2E6A1D5820833E0000735B8A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2E6A1D5920833E0000735B8A /* WebKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -341,6 +359,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2E6C53FB2083597200999685 /* WebView.swift in Sources */,
+				2E6C53FD20835B7F00999685 /* Info.swift in Sources */,
 				2E6A1C9F20829F5C00735B8A /* ViewController.swift in Sources */,
 				2E6A1C9D20829F5C00735B8A /* AppDelegate.swift in Sources */,
 			);
