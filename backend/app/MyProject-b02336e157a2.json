@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "industrial-net-201223",
+  "private_key_id": "b02336e157a26b545375241372a54074cac2d9f0",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvwIBADANBgkqhkiG9w0BAQEFAASCBKkwggSlAgEAAoIBAQCuQqmhyp89hz4v\n1eXJAFq7FRQzDsXxVqQn9XOnh6DpXYqvzejAB3HgDR3i0IwE+MP4cPw2crVmyK0n\nN+HSz+8gRrltFK9VJuFqwhkJmhOL++yUyuO6/jDwYTpsQkgg15/QAniCNpWenm4x\nax5/Y8DTEHqroalLqqrke/sIgoVLyQEP1UbT/p+OrEq+vxQWTb7OMHXTU3E5eoRQ\n3lSwmtVqCF7wRioN0T/rcc6LPur9vqU6ifB0tA44M8J1caM+2oa5YUPpnnv7twcv\n3s0ELtP+FhOmwp/xZjcYAf3iwEe1+WFWE7akBSxYOXIH7B7KaL6CmRJd6Wd51f/I\nlv9Qw9OLAgMBAAECggEAKDK8itQA8+KU19gRz9JDG9D6/eQ0iT2hVI5shYLl/a9U\nZMWtIU8WV8bu0/mjsynnmxIFPFItwm4cc2WStFy/HsTx1VXmNFBpw4TO3cYrKCmP\nI6vB6MrmYy0qmvqXROw4s3U+c1tAHH0TklbRjDVor8enZJxAP3I5RcfL2uSw9xAf\nsLy8QZlbZit4QDLl+78gCn4V86EffZVib1xn/FYw4tkipbU8v2SgFBYinKZYcle4\ng2GNYQLHnsZDlrou3L8JJ7SWHCflY8o0SHBLXlBDzF3veqzPRh8JVSRzejOAGZd4\nVgWLxv9ZmX1jI6AqNbRzgUBKJ3YNdSmOwKtDVU7vAQKBgQDZLkAuuSVn/eemZSXO\nIv3FblcYLH66P/s1BcSb2hPdud2RkDpo2vZJgFFJZj0OtUSYtDSp8gZwRZfwtxEx\nJSxT4PfBLQJUje8OPzhxGl3PgKOf3vMFmet5btqhYh6bN5/SuOcZuVol6Pr3qcG8\nIF9mBBYKmAKqGTIfLZxtBx6NywKBgQDNaHeUSggbF2iEUUgorbJ2c463M1xD2VfA\nvCJNKZmKLcd6qGvlJ5aYHvTr6tdwxyLcakGeqBCIE8QuubT8BkbFTqVbTZgZAcCn\n62QEW2mNXpChWuPbLlwZver3VLk0yhViW8d9YJuBBL/wyIT7cKeegIwd5HIe026J\n1aLSfVsZQQKBgQCOKixxaVkHHbnJvmRk75rW5ke010uNd9xk9QWiT7q5ZbWYV6Uk\nhlC6BHkxZu+I9TeWDkB7DqcQTz4KoItsdDz0G0uS9HeWCeL2nIPB5dSKxFZXjIXg\noMT3lI0hHy2RxXOlaMw+lopgToYaINFk6HwKN5qGDMORvTSGHEFNTV++yQKBgQCF\npyrfp0gc8J9GMWlFZrgPkONU2yt2zm3l78RV9vJ70YvRiNMjuR2o/8OX2ieyrzBE\nwTLPXEXddRca3CUiM6dK7QB1J0kHRHeqC2T53M0SemybQPuv+ztcWJIRuuQDsFY3\nuMZWE007pu6Jar/0p3m5jaUeMi37VtG/B+45De3/wQKBgQCuNmKeQ5LWwQ5fo3Fg\nWefmhDTge+5RdKmC3AenRMuHMSW9Xq03L/bTchpYfKXs8cIbvnOVkgV4J7FUv4Yr\nZihRvLWcfbcqZ5NeazX8ZvuBeKQFaUTLVi936maZnrRdOHGhG5jRl4C4MhPXwMn6\nLH++MWN3qXemhWJ8V2IOUrd5lw==\n-----END PRIVATE KEY-----\n",
+  "client_email": "pipe-it-up@industrial-net-201223.iam.gserviceaccount.com",
+  "client_id": "117686199964620528810",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://accounts.google.com/o/oauth2/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/pipe-it-up%40industrial-net-201223.iam.gserviceaccount.com"
+}
