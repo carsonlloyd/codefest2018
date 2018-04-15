@@ -21,7 +21,7 @@ schema = {
         "depth": {"type": "string", "pattern": "^\d+(.\d+)*$"},
         "soil_type": {"type": "string",
                       "enum": ["Clay 1", "Silt 1", "Clay 2", "Silt 2", "Coh-Gran", "Sand/Silt", "Good Sand/Gravel", ]},
-        "trench_type": {"type": "string", "pattern": "^[2,3,4,5]$"},
+        "trench_type": {"type": "string", "pattern": "^[2,3,4]$"},
         "safety_factor": {"type": "string", "pattern": "^\d+(.\d+)*$"}
     },
     "required": ["design_pressure", "depth", "soil_type", "trench_type", "safety_factor"]
