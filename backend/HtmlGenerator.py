@@ -28,6 +28,7 @@ class HtmlGenerator:
                 '   </head>' \
                 '   <body>' \
                 '       $groups$' \
+                '       <div style="width:100%;padding-top:20px;padding-bottom:10px;text-align:center;">Developed at Philly Codefest 2018</div>' \
                 '   </body>' \
                 '</html>'
     group = '<div style="width:80%;margin-left:auto;margin-right:auto"> ' \
